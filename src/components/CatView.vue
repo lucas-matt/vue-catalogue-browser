@@ -1,7 +1,6 @@
 <template>
     <div id="catview">
         <div v-for="subcat in catalogue.catalogues" v-bind:key="subcat.name">
-            {{subcat.name}}
             <CatRow :catalogue="subcat"></CatRow>
         </div>
     </div>
@@ -23,5 +22,9 @@
 </script>
 
 <style>
+
+    #catview {
+        margin-bottom:2%;
+    }
 
 </style>

@@ -27,7 +27,7 @@
 <style scoped>
 
     .catrow {
-        margin: 0% 10%;
+        margin: 2% 10%;
         text-align: left;
     }
 

@@ -1,17 +1,20 @@
 <template>
   <div id="app">
+    <Navbar></Navbar>
     <CatView :catalogue="catalogue"/>
   </div>
 </template>
 
 <script>
 import CatView from './components/CatView.vue';
+import Navbar from './components/Navbar.vue';
 import { sample } from './data/ExampleSource.js';
 
 export default {
   name: 'app',
   components: {
-    CatView
+    CatView,
+    Navbar
   },
   data: () => {
       return {
@@ -23,13 +26,17 @@ export default {
 
 <style>
 
-  body {
+  html {
+    height: 100%;
     margin: 0;
-    background: linear-gradient(135deg, slategrey, black);
+    background-size: cover  ;
+    background: linear-gradient(150deg, slategrey, black);
+    background-attachment: fixed;
   }
 
-  .catrow {
-    margin-top: 2%;
+  body {
+    margin: 0;
+    height: 100%;
   }
 
   #app {
