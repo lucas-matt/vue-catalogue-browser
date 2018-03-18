@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    <div class="catalogues">
-      <CatRow :catalogue="catalogue"/>
-    </div>
+    <CatView :catalogue="catalogue"/>
   </div>
 </template>
 
 <script>
-import CatRow from './components/CatRow.vue';
+import CatView from './components/CatView.vue';
 import { sample } from './data/ExampleSource.js';
 
 export default {
   name: 'app',
   components: {
-    CatRow
+    CatView
   },
   data: () => {
-      console.log(sample);
       return {
-          catalogue: sample.catalogues[0]
+          catalogue: sample
       }
   }
 }
@@ -31,7 +28,7 @@ export default {
     background: linear-gradient(135deg, slategrey, black);
   }
 
-  .catalogues {
+  .catrow {
     margin-top: 2%;
   }
 

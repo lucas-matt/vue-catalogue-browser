@@ -32,14 +32,15 @@
     }
 
     .catrow .list {
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.01 ));
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0 ));
     }
 
     .catrow .title {
         font-size: 125%;
+        font-weight: bold;
         padding: 1%;
         color: white;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.01));
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
     }
 
     .catrow img {
