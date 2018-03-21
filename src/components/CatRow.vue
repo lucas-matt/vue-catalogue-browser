@@ -5,19 +5,45 @@
       </div>
       <div class="list">
           <span v-for="content in catalogue.contents" v-bind:key="content.name">
-            <img class="grow" :src="content.image"/>
+            <img @click="show(content)" class="grow" :src="content.image"/>
           </span>
       </div>
     </div>
 </template>
 
 <script>
+    import Vue from 'vue';
+    import Card from './Card.vue';
     import { Catalogue } from '../data/Model.js';
+
+    let CardComponent = Vue.extend(Card);
 
     export default {
         name: 'CatRow',
+        components: {
+            Card
+        },
         props: {
             catalogue: Catalogue
+        },
+        methods: {
+            show(content) {
+                console.log(content);
+                let c = new CardComponent({
+                    propsData: {
+                        content: content
+                    }
+                });
+                c.$mount();
+                this.$swal({
+                    content: c.$el,
+                    buttons: {
+                        confirm: {
+                            value: 0
+                        }
+                    }
+                })
+            }
         }
     }
 
