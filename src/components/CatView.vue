@@ -8,7 +8,6 @@
 
 <script>
     import CatRow from './CatRow.vue';
-    import { Catalogue } from '../data/Model.js';
 
     export default {
         name: 'CatView',
