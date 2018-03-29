@@ -1,6 +1,6 @@
 <template>
     <div id="catview">
-        <div v-for="subcat in catalogue.catalogues" v-bind:key="subcat.name">
+        <div v-for="subcat in catalogues" v-bind:key="subcat.name">
             <CatRow :catalogue="subcat"></CatRow>
         </div>
     </div>
@@ -16,7 +16,7 @@
             CatRow
         },
         props: {
-            catalogue: Catalogue
+            catalogues: Array
         }
     }
 </script>

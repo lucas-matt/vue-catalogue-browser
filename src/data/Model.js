@@ -1,8 +1,7 @@
 export class Catalogue {
 
-    constructor(name, catalogues, contents) {
+    constructor(name, contents) {
         this.name = name;
-        this.catalogues = catalogues;
         this.contents = contents;
     }
 
@@ -10,8 +9,9 @@ export class Catalogue {
 
 export class Content {
 
-    constructor(name, image) {
+    constructor(name, description, image) {
         this.name = name;
+        this.description = description;
         this.image = image;
     }
 }

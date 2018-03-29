@@ -4,10 +4,18 @@
             <h3>{{content.name}}</h3>
         </div>
         <hr />
-        <div class="desc">
-            <img :src="content.image" />
-        </div>
-
+        <tabs>
+            <tab name="Info">
+                <div class="desc">
+                    <img :src="content.image" />
+                    <p>{{content.description}}</p>
+                    <div class="clear" />
+                </div>
+            </tab>
+            <tab name="Trailers">
+                #todo
+            </tab>
+        </tabs>
     </div>
 </template>
 
@@ -32,12 +40,23 @@
     }
 
     .card img {
-        width: 40%
+        width: 40%;
+        float: left;
+        margin-right: 1em;
     }
 
+    .card .clear {
+        clear: both;
+    }
+    
     .desc {
         padding: 1em;
+        display: block;
     }
+
+    .desc p {
+        margin: 0;
+    } 
 
     .head {
         text-align: center;
