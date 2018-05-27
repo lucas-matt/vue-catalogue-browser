@@ -12,9 +12,6 @@
                     <div class="clear" />
                 </div>
             </tab>
-            <tab name="Trailers">
-                #todo
-            </tab>
         </tabs>
     </div>
 </template>
