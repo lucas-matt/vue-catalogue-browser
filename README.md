@@ -4,9 +4,9 @@ A [Vue.js](https://vuejs.org/) Netflix style catalogue browser, used for visual 
 
 ## Screenshots
 
-![Browse](static/images/Screenshot from 2018-06-03 17-20-05.png)
+![Browse](https://github.com/lucas-matt/vue-catalogue-browser/raw/master/static/images/Screenshot%20from%202018-06-03%2017-20-05.png)
 
-![Detail](static/images/Screenshot from 2018-06-03 18-01-00.png)
+![Detail](https://github.com/lucas-matt/vue-catalogue-browser/raw/master/static/images/Screenshot%20from%202018-06-03%2018-01-00.png)
 
 ## Demo
 
