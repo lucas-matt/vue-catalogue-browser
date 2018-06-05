@@ -1,2 +1,3 @@
 # vue-catalogue-browser
-vue.js based Netflix style catalogue browser
+
+A [Vue.js](https://vuejs.org/) Netflix style catalogue browser.
